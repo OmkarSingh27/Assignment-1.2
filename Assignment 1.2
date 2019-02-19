@@ -1,0 +1,35 @@
+5. Problem Statement
+  1. How many ways are there to call a function in R?
+  Answer - There are three ways to call function in R
+  Example –
+  f<- function(abcd, pqr, defg)
+  list(a=abcd, b1=pqr, b2=defg)
+  
+  a) Call By Position-
+  str(f(1,2,3)) //Here, 1,2 and 3 are positions of the arguments
+  
+  b) Call By name-
+  str(f(2,3, abcd=1)) //Here, name ‘abc’ is used as name
+
+  Also, function can be called by Call by Partial Name-
+  str(f(1, 2,d=3)) // By using the initials of an argument name
+  
+  c) Call by default argument We can define the value of the arguments in the function definition and call the function without supplying any argument to get the default result. But, we can also call such functions by supplying new values of the argument and get non default result.
+  nf <- function(a-3, b=6){
+  result<- a*b
+  print(result)
+  }
+  nf() //Calling without argument
+  nf(9,3) // Giving new values to the argument
+
+  2. Is the below statement true?
+  • The lazy evaluation of a function means, the argument is evaluated only if it is evaluated
+  only if it is used inside the body of the function.
+  Answer : TRUE
+  Reason: Lazy evaluation means an evaluation strategy, which delays the evaluation of an expression until its value, is needed and thus avoids repetitive evaluations,
+  
+  3. Mention true or false for below statements:
+  a. Insights driven from descriptive analytics is not meaningful. - FALSE
+  b. The number of values in each elements of a list, should be equal. - FALSE
+  c. The datasets are not stored in memory of the computer using R. - FALSE
+  d. Data frames and matrices are two-dimensional, however the array is multidimensional. - TRUE
